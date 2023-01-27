@@ -18,3 +18,13 @@ def find_longest_substr(str1, str2):
     return longest_common_string
             
         
+def add_two_integers(list_of_integers: int, target_number):
+    for i in list_of_integers:
+        for j in list_of_integers:
+            if i!=j:
+                sum = i + j
+                if sum==target_number:
+                    print("Meet the targer: ", tuple(i, j))
+                else:
+                    continue
+
